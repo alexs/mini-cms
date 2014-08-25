@@ -62,6 +62,17 @@ return array(
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
 		),
+		'mysql' => array(
+			'driver'    => 'mysql',
+			'host'      => 'localhost',
+			'database'  => 'igl_laravel',
+			'username'  => 'root',
+			'password'  => 'qw12..',
+			'charset'   => 'utf8',
+			'collation' => 'utf8_unicode_ci',
+			'prefix'    => '',
+		),
+
 
 		'pgsql' => array(
 			'driver'   => 'pgsql',

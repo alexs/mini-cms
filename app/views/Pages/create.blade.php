@@ -1,0 +1,1 @@
+/home/alex/Projects/mini-cms/app/views/Pages/create.blade.php
