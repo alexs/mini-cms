@@ -7,11 +7,16 @@ class PagesController extends \BaseController {
 	 *
 	 * @return Response
 	 */
+
+	protected $layout = 'layouts.application';
+
 	public function index()
 	{
 		$pages = Page::all();
 
-		return View::make('pages.index', compact('pages'));
+		$this->layout->content = View::make('pages.index', compact('pages'));
+
+		//return View::make('pages.index', compact('pages'));
 	}
 
 	/**

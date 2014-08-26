@@ -12,7 +12,7 @@ class CreatePagesTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('Pages', function(Blueprint $table)
+		Schema::create('pages', function(Blueprint $table)
 		{
 			$table->increments('id');
 			$table->string('title');
@@ -31,7 +31,7 @@ class CreatePagesTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('Pages');
+		Schema::drop('pages');
 	}
 
 }
