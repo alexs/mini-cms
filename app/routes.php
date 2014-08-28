@@ -16,6 +16,13 @@ Route::get('/', function()
 	return View::make('hello');
 });
 
+Route::get('index/{name}', function($name)
+{
+	return $name.'text.....';
+});
+
 
 Route::resource('pages', 'PagesController');
+
+Route::resource('settings', 'SettingsController');
 

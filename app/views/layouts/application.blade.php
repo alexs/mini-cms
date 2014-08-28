@@ -10,9 +10,9 @@
 	<header>
 		<div>{{ HTML::image("http://placehold.it/100x100", "Logo") }}</div>
 		<div id="title">
-			<h1>HERE IS THE PAGE TITLE</h1>
+			<h1>{{Setting::orderBy('id','DESC')->first()->site_name;}}</h1>
 			<p>
-				slogan page
+				{{Setting::orderBy('id','DESC')->first()->slogan;}}
 			</p>
 		</div>
 		<div>{{ HTML::image("http://placehold.it/100x100", "Sec Logo") }}</div>
@@ -42,24 +42,24 @@
 	</div>
 	<footer>
 		<div>
-			<h2>SubSection</h2>
+			<h2>{{Setting::orderBy('id','DESC')->first()->subsection1_title;}}</h2>
 			{{ HTML::image("http://placehold.it/200x100", "Logo") }}
 			<p>
-				some message
+				{{Setting::orderBy('id','DESC')->first()->subsection1_desc;}}
 			</p>
 		</div>
 		<div>
-			<h2>SubSection</h2>
+			<h2>{{Setting::orderBy('id','DESC')->first()->subsection2_title;}}</h2>
 			{{ HTML::image("http://placehold.it/200x100", "Logo") }}
 			<p>
-			some message
+				{{Setting::orderBy('id','DESC')->first()->subsection2_desc;}}
 			</p>
 		</div>
 		<div>
-			<h2>SubSection</h2>
+			<h2>{{Setting::orderBy('id','DESC')->first()->subsection3_title;}}</h2>
 			{{ HTML::image("http://placehold.it/200x100", "Logo") }}
 			<p>
-				some message
+				{{Setting::orderBy('id','DESC')->first()->subsection3_desc;}}
 			</p>
 
 		</div>
