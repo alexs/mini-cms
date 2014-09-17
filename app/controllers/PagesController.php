@@ -1,6 +1,6 @@
 <?php
 
-class PagesController extends \BaseController {
+class PagesController extends BaseController {
 
 	/**
 	 * Display a listing of pages
@@ -26,7 +26,8 @@ class PagesController extends \BaseController {
 	 */
 	public function create()
 	{
-		return View::make('pages.create');
+		//return View::make('pages.create');
+		$this->layout->content = View::make('pages.create');
 	}
 
 	/**
@@ -58,7 +59,8 @@ class PagesController extends \BaseController {
 	{
 		$page = Page::findOrFail($id);
 
-		return View::make('pages.show', compact('page'));
+		//return View::make('pages.show', compact('page'));
+		$this->layout->content = View::make('pages.show', compact('page'));
 	}
 
 	/**

@@ -1,1 +1,4 @@
-/home/alex/Projects/mini-cms/app/views/Pages/show.blade.php
+@section('content')
+{{ Blade::compileString($page->content) }}
+@stop
+
